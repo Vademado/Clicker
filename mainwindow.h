@@ -15,7 +15,13 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
+    void addProgramPath(const QString &);
     ~MainWindow();
+
+private slots:
+    void on_pushButtonSelectApplication_clicked();
+
+    void on_pushButtonCompleteTask_clicked();
 
 private:
     Ui::MainWindow *ui;
