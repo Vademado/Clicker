@@ -4,7 +4,6 @@
 #include <QProcess>
 #include <QMessageBox>
 #include <QTimer>
-#include <windows.h>>
 #include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent)
