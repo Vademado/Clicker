@@ -23,7 +23,13 @@ private slots:
 
     void on_pushButtonCompleteTask_clicked();
 
+    void on_pushButtonSelectFile_clicked();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
+
+    void printTextInNotepad(const QString& text);
 };
 #endif // MAINWINDOW_H

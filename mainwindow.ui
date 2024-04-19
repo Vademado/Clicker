@@ -21,6 +21,66 @@
   </property>
   <widget class="QWidget" name="MainWindow_2">
    <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="0" colspan="4">
+     <widget class="QPushButton" name="pushButtonCompleteTask">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Выполнить задачу</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="4">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Minimum</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>10</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="6" column="3">
+     <widget class="QPushButton" name="pushButton">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Помощь</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="4">
+     <widget class="QTextEdit" name="textEditInputText"/>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="pushButtonSelectApplication">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Выбрать приложение</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QComboBox" name="comboBoxProgramPath"/>
+    </item>
     <item row="1" column="0">
      <widget class="QLabel" name="labelProgramPath">
       <property name="minimumSize">
@@ -41,77 +101,34 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="3">
-     <widget class="QPushButton" name="pushButtonSelectApplication">
-      <property name="font">
-       <font>
-        <pointsize>9</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Выбрать приложение</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1" colspan="2">
-     <widget class="QComboBox" name="comboBoxProgramPath"/>
-    </item>
-    <item row="0" column="0" colspan="4">
-     <widget class="QTextEdit" name="textEditInputText"/>
-    </item>
-    <item row="2" column="0" colspan="4">
-     <widget class="QPushButton" name="pushButtonCompleteTask">
-      <property name="font">
-       <font>
-        <pointsize>9</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Выполнить задачу</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="3">
-     <widget class="QPushButton" name="pushButton">
+    <item row="2" column="0">
+     <widget class="QLabel" name="labelFilePath">
       <property name="font">
        <font>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Помощь</string>
+       <string>Файл для записи:</string>
       </property>
      </widget>
     </item>
-    <item row="3" column="0" colspan="4">
-     <spacer name="verticalSpacer">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="pushButtonSelectFile">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
       </property>
-      <property name="sizeType">
-       <enum>QSizePolicy::Minimum</enum>
+      <property name="text">
+       <string>Выбрать файл</string>
       </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>10</height>
-       </size>
-      </property>
-     </spacer>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="lineEditFilePath"/>
     </item>
    </layout>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>25</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
