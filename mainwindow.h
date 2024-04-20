@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QProcess>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -27,9 +28,17 @@ private slots:
 
     void on_pushButton_clicked();
 
+    // void onTimerTimeout();
+
+    // void onProcessStarted();
+
 private:
     Ui::MainWindow *ui;
+    // QTimer *timer;
+    // QProcess *previousProcess;
+    // QString inputText;
+    // QString filePath;
+    // QString programPath;
 
-    void printTextInNotepad(const QString& text);
 };
 #endif // MAINWINDOW_H
